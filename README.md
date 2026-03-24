@@ -1,4 +1,3 @@
-
 # Secure Access Control System (LPC1768)
 
 Embedded secure access system implemented on the LPC1768 (ARM Cortex-M3),
@@ -10,19 +9,28 @@ simulating a real-world door locking mechanism using relay actuation.
 - GPIO
 - USB Serial Communication
 
-## Project Status
-⚠️ Code upload in progress.  
-Documentation and system design are available; source code will be added.
-
 ## Overview
 The system grants or denies access based on serial input via a USB terminal.
 An LED provides visual feedback, while a relay simulates physical door unlocking.
 
-## Documentation
-Design notes and reports are available in the `docs/` directory.
+## Demo
+A short hardware demonstration video showing LED feedback and relay actuation
+is available in the `media/` directory.
 
-## Future Work
-- Upload embedded C source code
-- Add keypad/RFID authentication
-- Implement EEPROM/SD logging
-- Remove USB terminal dependency
+## Documentation
+Design notes and supporting reports are available in the `docs/` directory.
+
+## Limitations
+- Access control uses simple serial input and does not implement secure authentication.
+- No logging of access attempts or timestamps.
+- System operation depends on USB serial communication.
+
+## Future Improvements
+- Upload embedded C source code (`main.c`)
+- Add keypad or RFID-based authentication
+- Implement EEPROM or SD-card logging
+- Enable standalone or wireless operation
+
+## Notes
+This project was developed as part of an Embedded Computing module and focuses on
+low-level I/O handling, system design, and hardware constraints.
